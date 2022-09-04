@@ -1,41 +1,3 @@
-/* General */
-
-body {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.row {
-  height: 100vh;
-}
-
-.one {
-  background-color: blue;
-}
-
-.two {
-  background-color: blueviolet;
-}
-
-.three {
-  background-color: green;
-}
-
-.four {
-  background-color: greenyellow;
-}
-
-.five {
-  background-color: red;
-}
-
-.six {
-  background-color: orange;
-}
-
-.seven {
-  background-color: orangered;
-}
-
 /* splashscreen */
 
 .splash {
@@ -44,14 +6,7 @@ body {
   left: 0%;
   width: 100%;
   height: 100%;
-  background: rgb(99, 21, 169);
-  background: linear-gradient(
-    60deg,
-    rgba(99, 21, 169, 1) 0%,
-    rgba(188, 53, 140, 1) 30%,
-    rgba(217, 68, 165, 1) 62%,
-    rgba(236, 89, 184, 1) 75%
-  );
+  background: black;
   z-index: 200;
   color: #4f4d8b;
   text-align: center;
@@ -86,4 +41,119 @@ body {
 
 .sslogo {
   width: 25%;
+}
+
+/* General */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: black;
+  max-height: 96%;
+}
+
+/* Header */
+
+header {
+  height: 9%;
+  padding-top: 0.7rem;
+}
+
+.navbar {
+  margin: -0.5rem 0.1rem;
+}
+
+.navbar-brand img {
+  width: 15rem;
+}
+
+.nav-link {
+  padding: none;
+}
+
+.header-icons {
+  color: #e5213d;
+}
+
+/* Searchbar */
+
+.form-inline {
+  margin-bottom: -0.05rem;
+}
+
+.form-control {
+  height: 1.2rem;
+  background-color: black;
+  border: none;
+}
+
+.form-control:focus {
+  background-color: black;
+  color: #e5213d;
+}
+
+.form-control::placeholder {
+  color: #e5213d;
+}
+
+/* Main */
+
+main {
+  height: 87%;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  border-radius: 2em / 2em;
+}
+
+.container-fluid {
+  height: 90vh;
+  scroll-snap-align: start;
+}
+
+.one {
+  background-color: orangered;
+}
+
+.two {
+  background-image: url(public/img/langue.jpg);
+  background-position: center;
+}
+
+.three {
+  background-image: url(public/img/histoire.jpg);
+  background-position: center;
+}
+
+.four {
+  background-image: url(public/img/geographie.jpg);
+  background-position: 40% 40%;
+}
+
+.five {
+  background-image: url(public/img/art.jpg);
+  background-position: center;
+}
+
+.six {
+  background-image: url(public/img/ressources.jpg);
+  background-position: 65%;
+}
+
+.seven {
+  background-image: url(public/img/disclaimer.jpg);
+  background-position: center;
+}
+
+/* Footer */
+
+footer h3,
+h6 {
+  color: #e5213d;
+}
+
+footer {
+  padding-top: 0.3rem;
 }

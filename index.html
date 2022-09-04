@@ -47,27 +47,93 @@
     <body>
       <!-- Splashscreen -->
       <div class="d-flex align-items-center justify-content-center splash">
-        <img class="fade-in sslogo" src="#" />
+        <img class="fade-in sslogo" src="public/logos/japon_decompose_logo" />
       </div>
 
       <!-- Header -->
-      <header>This is the header.</header>
+      <header>
+          <div class="container-fluid">
+            <div class="row">
+              <nav class="col navbar">
+                <a class="navbar-brand" href="index.html">
+                  <img
+                    src="public/logos/japon_decompose_logo"
+                    alt="Le Japon Décomposé Logo"
+                    width="200"
+                  />
+                </a>
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn my-2 my-sm-0" type="submit">
+                    <i
+                    class="fas fa-search header-icons"
+                    title="Chercher sur le site"
+                  ></i
+                >
+                  </button>
+                </form>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
 
       <!-- Main body -->
       <main>
-        <div class="container-fluid">
-          <div class="row one"></div>
-          <div class="row two"></div>
-          <div class="row three"></div>
-          <div class="row four"></div>
-          <div class="row five"></div>
-          <div class="row six"></div>
-          <div class="row seven"></div>
-        </div>
+        <div class="container-fluid rounded one"></div>
+        <div class="container-fluid rounded two"></div>
+        <div class="container-fluid rounded three"></div>
+        <div class="container-fluid rounded four"></div>
+        <div class="container-fluid rounded five"></div>
+        <div class="container-fluid rounded six"></div>
+        <div class="container-fluid rounded seven"></div>
       </main>
 
       <!-- Footer -->
-      <footer>This is the footer.</footer>
+      <footer>
+          <div class="container">
+            <div class="row">
+              <nav class="col">
+                <ul class="my-auto pl-2 text-center">
+                  <li class="list-inline-item">
+                    <a class="nav-link" href="public/pages/legal.html"
+                      ><h6>Mentions légales</h6></a
+                    >
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="nav-link" href="public/pages/contact.html"
+                      ><h6>Nous Contacter</h6></a
+                    >
+                  </li>
+                  <!-- <br /> -->
+                  <li class="list-inline-item">
+                    <a class="nav-link" href="YT Channel" target="_blank">
+                      <h3>
+                        <i
+                          class="fab fa-youtube footer-icons"
+                          style="vertical-align: middle"
+                          title="Visiter la chaîne YouTube"
+                        ></i>
+                      </h3>
+                    </a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="nav-link" href="Insta" target="_blank">
+                      <h3>
+                        <i
+                          class="fab fa-instagram footer-icons"
+                          style="vertical-align: middle"
+                          title="Visiter le compte Instagram"
+                        ></i>
+                      </h3>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
 
       <!-- Required scripts to backup Bootstrap -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
