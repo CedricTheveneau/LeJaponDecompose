@@ -49,10 +49,15 @@
   display: none;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif;
   background-color: black;
   max-height: 96%;
+  max-width: 100%;
 }
 
 /* Header */
@@ -60,6 +65,11 @@ body {
 header {
   height: 9%;
   padding-top: 0.7rem;
+}
+
+header .container {
+  width: 100%;
+  margin-left: 0vh;
 }
 
 .navbar {
@@ -71,7 +81,7 @@ header {
 }
 
 .nav-link {
-  padding: none;
+  padding: 0%;
 }
 
 .header-icons {
@@ -103,6 +113,7 @@ header {
 
 main {
   height: 87%;
+  overflow-x: clip;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   border-radius: 2em / 2em;
@@ -117,7 +128,7 @@ main {
 }
 
 .carousel-indicators {
-  bottom: 9%;
+  bottom: 8%;
 }
 
 /*.carousel {
@@ -185,10 +196,15 @@ h6 {
 }
 
 footer {
-  padding-top: 0.3rem;
+  padding-top: 0.8rem;
 }
 
 @media (max-width: 600px) {
+  body {
+    width: 110%;
+    overflow-x: clip;
+  }
+
   .navbar-brand img {
     width: 10rem;
   }
