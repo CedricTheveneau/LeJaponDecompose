@@ -5,3 +5,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
     splash.classList.add("display-none");
   }, 2000);
 });
+
+$(document).ready(function () {
+  $("li").on("click", function () {
+    $("li").removeClass("clicked");
+    $(this).addClass("clicked");
+  });
+});
