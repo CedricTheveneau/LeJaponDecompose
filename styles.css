@@ -113,10 +113,39 @@ header .container {
 
 main {
   height: 87%;
+  scroll-behavior: smooth;
   overflow-x: clip;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
   border-radius: 2em / 2em;
+}
+
+/* Nav */
+
+.floating_nav {
+  position: absolute;
+  background-color: #e5213d;
+  border-radius: 25px;
+  opacity: 10%;
+  z-index: 2;
+  margin-left: 88%;
+  margin-top: 13%;
+  align-items: center;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+.floating_nav:hover {
+  transition: 0.5s ease-in-out;
+  opacity: 100%;
+}
+
+.floating_nav ul {
+  list-style: none;
+}
+
+.floating_nav a:active {
+  color: white;
 }
 
 /* Carousel */
