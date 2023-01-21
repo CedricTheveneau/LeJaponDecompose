@@ -139,7 +139,7 @@ main {
 
 .floating_nav:hover {
   transition: 0.5s ease-in-out;
-  opacity: 80%;
+  opacity: 100%;
   width: 10%;
   height: 303px;
   margin-left: 88%;
@@ -147,7 +147,7 @@ main {
 
 .floating_nav:hover p {
   display: block;
-  opacity: 30%;
+  opacity: 50%;
   transition: 0.5s ease-in-out;
 }
 
@@ -172,7 +172,7 @@ main {
 
 .floating_nav a {
   text-decoration: none;
-  opacity: 80%;
+  opacity: 100%;
   color: white;
   transition: 0.3s ease-in-out;
 }
@@ -186,6 +186,12 @@ main {
 .clicked {
   color: black;
   font-weight: bold;
+}
+
+.floating_nav:hover > ul > a > li.clicked > p {
+  display: block;
+  opacity: 100%;
+  transition: 0.5s ease-in-out;
 }
 
 .floating_nav li {
