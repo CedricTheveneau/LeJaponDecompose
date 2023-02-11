@@ -24,7 +24,6 @@
 }
 
 .splash.display-none {
-  z-index: -10;
   display: none;
 }
 
