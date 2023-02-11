@@ -1,5 +1,3 @@
-
-le Japon Décomposé is a 
 # Le Japon Décomposé
 
 A website dedicated to japanese culture, and more particularly how to learn to speak Japanese made using Bootstrap4.
@@ -24,6 +22,7 @@ the main container will consist of a table of content to easily go across all th
 Finally, on the right of the page, a list of useful tools (mainly recommended books) that may help you get to a more advanced level at Japanese, everything will have a clickable link that will redirect you to a place to buy/download them.
 The Footer will contain contact links, useful links to my main sources of information and legal notices.
 **please note that:**
+
 - I'm not a japanese teacher and won't pretend to be, I'm just learning it and thought it might be a good idea to share my experience and what I find with others.
 - I won't sell anything on this website, it's more about informative stuff than real lessons, even though I'll try to get deep into the subjects. All products you'll find for sale on this website will be articles recommended to you. I'm not affiliated with any store/brand that could be showed on this website.
 
