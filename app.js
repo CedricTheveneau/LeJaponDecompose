@@ -7,7 +7,6 @@ splashScreen();
 
 const observer = () => {
   const floatingNav = document.querySelectorAll(".navLink");
-  console.log(floatingNav);
   floatingNav.forEach((element) => {
     element.addEventListener("click", () => {
       floatingNav.forEach((e) => {
