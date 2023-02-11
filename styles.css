@@ -24,7 +24,7 @@
 }
 
 .splash.display-none {
-  display: none;
+  display: none !important;
 }
 
 @keyframes fadeIn {
@@ -157,12 +157,6 @@ main {
   left: 88%;
 }
 
-.floating_nav:hover p {
-  display: block;
-  opacity: 50%;
-  transition: 0.5s ease-in-out;
-}
-
 .floating_nav ul {
   list-style: none;
   padding-right: 42%;
@@ -176,14 +170,22 @@ main {
 .floating_nav:hover ul {
   padding-right: 15%;
   margin-left: -10%;
-  padding-top: 10%;
 }
 
 .floating_nav a {
   text-decoration: none;
-  opacity: 100%;
+  opacity: 0%;
   color: white;
   transition: 0.3s ease-in-out;
+  display: block;
+}
+
+.floating_nav:hover a {
+  text-decoration: none;
+  opacity: 50%;
+  color: white;
+  transition: 0.3s ease-in-out;
+  display: block;
 }
 
 .floating_nav a:hover {
@@ -192,9 +194,10 @@ main {
   transition: 0.3s ease-in-out;
 }
 
-.clicked {
-  color: black;
-  font-weight: bold;
+.floating_nav:hover li.clicked > a {
+  color: black !important;
+  opacity: 100% !important;
+  font-weight: bold !important;
 }
 
 .floating_nav:hover > ul > a > li.clicked > p {
