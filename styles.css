@@ -25,9 +25,16 @@
 
 .splash.display-none {
   z-index: -10;
+  display: none;
 }
 
 @keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
   to {
     opacity: 1;
   }
