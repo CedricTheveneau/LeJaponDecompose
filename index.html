@@ -6,6 +6,9 @@
   <!-- Required tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="Découvrez et apprenez le japonais, immergez-vous dans la géographie, l'histoire du Japon, ainsi que l'art japonais !">
+  <meta name="keywords" content="Japon Blog Japonais Langue Japonaise Histoire Géographie Apprendre JLPT Art">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -22,20 +25,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
-  <style>
-    body {
-      font-family: "Noto Sans JP", sans-serif;
-    }
-  </style>
 
-  <title>Le Japon Décomposé</title>
+  <title>Le Japon Décomposé - Blog sur le Japon et la langue Japonaise</title>
   <link rel="shortcut icon" type="image/svg+xml" href="public/img/circle-solid.svg" />
 </head>
 
 <body>
   <!-- Splashscreen -->
   <div class="d-flex align-items-center justify-content-center splash">
-    <img class="fade-in sslogo" src="public/logos/japon_decompose_logo" />
+    <img class="fade-in sslogo" src="public/logos/japon_decompose_logo.png" alt="Logo Japon Décmposé" />
   </div>
 
   <!-- Header -->
@@ -43,19 +41,10 @@
     <div class="container">
       <div class="row">
         <nav class="col-12 navbar">
-          <a class="navbar-brand" href="index.html">
-            <img src="public/logos/japon_decompose_logo" alt="Le Japon Décomposé Logo" width="200" />
+          <a class="navbar-brand" href="index.html" title="Revenir à la page d'acceuil / Recharger la page d'acceuil">
+            <div class="point"></div>
+            <h1>Le &nbsp;Japon &nbsp;Décomposé</h1>
           </a>
-          <!-- <form class="form-inline">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn my-2 my-sm-0" type="submit">
-                    <i
-                    class="fas fa-search header-icons"
-                    title="Chercher sur le site"
-                  ></i
-                >
-                  </button>
-                </form> -->
         </nav>
       </div>
     </div>
@@ -70,37 +59,37 @@
 
     <nav class="floating_nav">
       <ul>
-        <a href="#home">
+        <a href="#home" title="Se rendre à la section principale">
           <li class="navLink clicked">
             <p>Home</p>•
           </li>
         </a>
-        <a href="#langue">
+        <a href="#langue" title="Se rendre à la section 'Langue'">
           <li class="navLink">
             <p>Langue</p>•
           </li>
         </a>
-        <a href="#histoire">
+        <a href="#histoire" title="Se rendre à la section 'Histoire'">
           <li class="navLink">
             <p>Histoire</p>•
           </li>
         </a>
-        <a href="#geographie">
+        <a href="#geographie" title="Se rendre à la section 'Géographie'">
           <li class="navLink">
             <p>Geographie</p>•
           </li>
         </a>
-        <a href="#art">
+        <a href="#art" title="Se rendre à la section 'Art'">
           <li class="navLink">
             <p>Art</p>•
           </li>
         </a>
-        <a href="#ressources">
+        <a href="#ressources" title="Se rendre à la section 'Ressources'">
           <li class="navLink">
             <p>Ressources</p>•
           </li>
         </a>
-        <a href="#disclaimer">
+        <a href="#disclaimer" title="Se rendre à la section 'Disclaimer'">
           <li class="navLink">
             <p>Disclaimer</p>•
           </li>
@@ -110,7 +99,7 @@
 
     <!-- First container -->
 
-    <div id="home" class="container-fluid rounded one">
+    <section id="home" class="container-fluid rounded one">
       <div class="row">
         <div class="col-12">
 
@@ -123,7 +112,7 @@
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="public/img/carousel_info.jpg" class="d-block w-100" alt="Kyoto picture" />
+                <img loading="lazy" src="public/img/carousel_info.webp" class="d-block w-100" alt="Kyoto picture" />
                 <div class="carousel-caption d-block w-100">
                   <h5>Création du site</h5>
                   <p>Le développement du site a enfin débuté et avance bien. Certaines fonctions sont encore manquantes
@@ -131,46 +120,53 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="public/img/carousel_info_2.jpg" class="d-block w-100" alt="Tokyo picture" />
+                <img loading="lazy" src="public/img/carousel_info_2.webp" class="d-block w-100" alt="Tokyo picture" />
                 <div class="carousel-caption d-block w-100">
                   <h5>Patch notes</h5>
                   <p>Le site étant toujours en cours de développement, des bugs sont susceptibles de subvenir.</p>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev"
+              title="Voir la slide précédente">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next"
+              title="Voir la slide suivante">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    </div>
-    <div id="langue" class="container-fluid rounded two">
-      <!--<div class="topPart">
-        <h2>La géographie</h2>
       </div>
-      <div class="articlePart">
-        <div class="article">
-          <img src="public/img/geographie.jpg" alt="#">
-          <p>Fuji-San, guide du peuple</p>
-        </div>
       </div>
-      <div class="bottomPart">
-        <button>Tout Voir</button>
-      </div>-->
-    </div>
-    <div id="histoire" class="container-fluid rounded three"></div>
-    <div id="geographie" class="container-fluid rounded four"></div>
-    <div id="art" class="container-fluid rounded five"></div>
-    <div id="ressources" class="container-fluid rounded six"></div>
-    <div id="disclaimer" class="container-fluid rounded seven"></div>
+    </section>
+    <section id="langue" class="container-fluid rounded two">
+      <img loading="lazy" src="public/img/langue.webp" alt="Cahier avec des caractères japonais">
+      <h2>La Langue</h2>
+    </section>
+    <section id="histoire" class="container-fluid rounded three">
+      <img loading="lazy" src="public/img/histoire.webp" alt="Temple japonais de l'époque d'Edo">
+      <h2>L'Histoire</h2>
+    </section>
+    <section id="geographie" class="container-fluid rounded four">
+      <img loading="lazy" src="public/img/geographie.webp" alt="Vue sur le Mont Fuji">
+      <h2>La Géographie</h2>
+    </section>
+    <section id="art" class="container-fluid rounded five">
+      <img loading="lazy" src="public/img/art.webp" alt="La Grande Vague de Kanagawa">
+      <h2>L'Art</h2>
+    </section>
+    <section id="ressources" class="container-fluid rounded six">
+      <img loading="lazy" src="public/img/ressources.webp" alt="Application Drops pour apprendre les langues">
+      <h2>Ressources</h2>
+    </section>
+    <section id="disclaimer" class="container-fluid rounded seven">
+      <img loading="lazy" src="public/img/disclaimer.webp" alt="Mai Sakurajima">
+      <h2>Disclaimer</h2>
+    </section>
   </main>
 
   <!-- Footer -->
@@ -180,29 +176,39 @@
         <nav class="col-12">
           <ul class="my-auto pl-2 text-center">
             <li class="list-inline-item">
-              <a class="nav-link" href="public/pages/legal.html">
-                <h6>Mentions légales</h6>
+              <a class="nav-link" href="public/pages/legal.html" title="Consulter les mentions légales">
+                <h2>Mentions légales</h2>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="nav-link" href="public/pages/contact.html">
-                <h6>Nous Contacter</h6>
+              <a class="nav-link" href="public/pages/contact.html" title="Entrer en contact avec le du site">
+                <h2>Nous Contacter</h2>
               </a>
             </li>
             <!-- <br /> -->
             <li class="list-inline-item">
-              <a class="nav-link" href="YT Channel" target="_blank">
+              <a class="nav-link" href="YT Channel" target="_blank" title="Découvrir notre chaîne YouTube">
                 <h3>
-                  <i class="fab fa-youtube footer-icons" style="vertical-align: middle"
-                    title="Visiter la chaîne YouTube"></i>
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.98888 4.89055C10.3246 4.62958 13.6755 4.62958 17.0112 4.89055L19.2519 5.06585C20.5 5.16349 21.521 6.09889 21.7273 7.33366C22.2435 10.4232 22.2435 13.5769 21.7273 16.6664C21.521 17.9012 20.5 18.8366 19.2519 18.9342L17.0112 19.1095C13.6755 19.3705 10.3246 19.3705 6.98888 19.1095L4.74818 18.9342C3.50011 18.8366 2.47909 17.9012 2.27278 16.6664C1.75657 13.5769 1.75657 10.4232 2.27278 7.33366C2.47909 6.09889 3.50011 5.16349 4.74818 5.06585L6.98888 4.89055ZM10 14.4702V9.52989C10 9.2967 10.2544 9.15267 10.4543 9.27264L14.5713 11.7428C14.7655 11.8593 14.7655 12.1408 14.5713 12.2573L10.4543 14.7274C10.2544 14.8474 10 14.7034 10 14.4702Z"
+                      fill="black" />
+                  </svg>
                 </h3>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="nav-link" href="Insta" target="_blank">
+              <a class="nav-link" href="Insta" target="_blank" title="Visiter notre compte Instagram">
                 <h3>
-                  <i class="fab fa-instagram footer-icons" style="vertical-align: middle"
-                    title="Visiter le compte Instagram"></i>
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12 8.75005C10.2051 8.75005 8.75 10.2051 8.75 12C8.75 13.795 10.2051 15.25 12 15.25C13.7949 15.25 15.25 13.795 15.25 12C15.25 10.2051 13.7949 8.75005 12 8.75005Z"
+                      fill="black" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.76954 3.08151C10.2177 2.69614 13.7824 2.69614 17.2305 3.08151C19.1289 3.29369 20.6601 4.78947 20.8829 6.69452C21.2952 10.2195 21.2952 13.7806 20.8829 17.3056C20.6601 19.2106 19.1289 20.7064 17.2305 20.9186C13.7824 21.304 10.2177 21.304 6.76954 20.9186C4.87114 20.7064 3.33995 19.2106 3.11713 17.3056C2.70485 13.7806 2.70485 10.2195 3.11713 6.69452C3.33995 4.78947 4.87114 3.29369 6.76954 3.08151ZM17 6.00005C16.4477 6.00005 16 6.44776 16 7.00005C16 7.55233 16.4477 8.00005 17 8.00005C17.5523 8.00005 18 7.55233 18 7.00005C18 6.44776 17.5523 6.00005 17 6.00005ZM7.25 12C7.25 9.37669 9.37665 7.25005 12 7.25005C14.6234 7.25005 16.75 9.37669 16.75 12C16.75 14.6234 14.6234 16.75 12 16.75C9.37665 16.75 7.25 14.6234 7.25 12Z"
+                      fill="black" />
+                  </svg>
+
                 </h3>
               </a>
             </li>
