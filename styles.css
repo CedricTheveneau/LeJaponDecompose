@@ -20,21 +20,11 @@
   color: #4f4d8b;
   text-align: center;
   line-height: 50%;
+  transition: all 0.5s;
 }
 
 .splash.display-none {
-  position: fixed;
-  opacity: 0;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background: black;
   z-index: -10;
-  color: #237508;
-  text-align: center;
-  line-height: 90vh;
-  transition: all 0.5s;
 }
 
 @keyframes fadeIn {
@@ -48,7 +38,8 @@
 }
 
 .sslogo {
-  width: 25%;
+  width: 290px;
+  height: 35px;
 }
 
 /* General */
@@ -120,27 +111,6 @@ header .container {
   color: #e5213d;
 }
 
-/* Searchbar */
-
-.form-inline {
-  margin-bottom: -0.05rem;
-}
-
-.form-control {
-  height: 1.2rem;
-  background-color: black;
-  border: none;
-}
-
-.form-control:focus {
-  background-color: black;
-  color: #e5213d;
-}
-
-.form-control::placeholder {
-  color: #e5213d;
-}
-
 /* Main */
 
 main {
@@ -161,17 +131,18 @@ main {
   opacity: 20%;
   z-index: 2;
   left: 95%;
-  top: 50%;
+  top: 10%;
   transform: translateX(-95%);
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   width: 43px;
-  height: 303px;
+  height: 43px;
   align-items: center;
   text-align: center;
   transition: 0.5s ease-in-out;
 }
 
 .floating_nav:hover {
+  transform: translateY(-5%);
   position: fixed;
   transition: 0.5s ease-in-out;
   opacity: 100%;
@@ -197,11 +168,9 @@ main {
 }
 
 .floating_nav:hover ul {
-  list-style: none;
   padding-right: 15%;
   margin-left: -10%;
   padding-top: 10%;
-  transition: 0.5s ease-in-out;
 }
 
 .floating_nav a {
@@ -254,6 +223,11 @@ main {
   overflow-y: hidden;
   height: 90vh;
   width: 100vw;
+}
+
+.carousel-caption > p:nth-child(1) {
+  font-size: 1.25rem;
+  margin-bottom: 0;
 }
 
 .carousel-indicators {
@@ -314,6 +288,7 @@ footer {
 footer h3,
 h2 {
   margin-bottom: 0;
+  font-weight: bold;
   font-size: 1rem;
   color: #e5213d;
 }
@@ -338,8 +313,113 @@ footer a:hover > * {
 
 @media (max-width: 600px) {
   body {
-    width: 110%;
+    width: 100%;
     overflow-x: clip;
+  }
+
+  header {
+    height: 10%;
+  }
+
+  main {
+    height: 80%;
+  }
+
+  .floating_nav {
+    position: fixed;
+    background-color: #e5213d;
+    border-radius: 25px;
+    opacity: 20%;
+    z-index: 2;
+    left: 85%;
+    top: 10%;
+    transform: translateX(-50%);
+    transform: translateY(-10%);
+    width: 43px;
+    height: 43px;
+    align-items: center;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+  }
+
+  .floating_nav:hover {
+    transform: translateY(-10%);
+    transform: translateX(-80%);
+    position: fixed;
+    transition: 0.5s ease-in-out;
+    opacity: 100%;
+    width: 165px;
+    height: 303px;
+  }
+
+  .floating_nav:hover p {
+    display: block;
+    opacity: 50%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .floating_nav ul {
+    list-style: none;
+    padding-right: 42%;
+    display: flex;
+    height: 303px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: 0.5s ease-in-out;
+  }
+
+  .floating_nav:hover ul {
+    padding-right: 15%;
+    margin-left: -10%;
+    padding-top: 10%;
+  }
+
+  .floating_nav a {
+    text-decoration: none;
+    opacity: 100%;
+    color: white;
+    transition: 0.3s ease-in-out;
+  }
+
+  .floating_nav a:hover {
+    color: white;
+    opacity: 100%;
+    transition: 0.3s ease-in-out;
+  }
+
+  .clicked {
+    color: black;
+    font-weight: bold;
+  }
+
+  .floating_nav:hover > ul > a > li.clicked > p {
+    display: block;
+    opacity: 100%;
+    transition: 0.5s ease-in-out;
+  }
+
+  .floating_nav li {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bolder;
+  }
+
+  .floating_nav p {
+    font-size: medium;
+    padding-right: 10%;
+    opacity: 50%;
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  .floating_nav p:hover {
+    opacity: 100;
+    transition: ease-in-out 0.3s;
+    display: block;
+  }
+
+  footer {
+    height: 10%;
   }
 
   footer h3,
@@ -349,6 +429,11 @@ footer a:hover > * {
 
   footer h2 {
     font-size: 0.8rem;
+  }
+
+  footer svg {
+    scale: 2;
+    margin-inline: 1rem;
   }
 }
 @media (max-width: 478px) {
