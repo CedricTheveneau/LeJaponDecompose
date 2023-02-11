@@ -5,9 +5,16 @@ const splashScreen = () => {
 };
 splashScreen();
 
-$(document).ready(function () {
-  $("li").on("click", function () {
-    $("li").removeClass("clicked");
-    $(this).addClass("clicked");
+const observer = () => {
+  const floatingNav = document.querySelectorAll(".navLink");
+  console.log(floatingNav);
+  floatingNav.forEach((element) => {
+    element.addEventListener("click", () => {
+      floatingNav.forEach((e) => {
+        e.classList.remove("clicked");
+      });
+      element.classList.add("clicked");
+    });
   });
-});
+};
+observer();
